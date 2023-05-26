@@ -18,13 +18,13 @@ jobs:
         python-version: 3.8
         
     - name: Print current working directory
-      run: pwd
+      run: pwd ls
 
     - name: Install dependencies
       run: pip install -r requirements.txt
       
     - name: Run Python script
       run: python zip_lib.py
-      
+
     - name: Print current working directory
-      run: pwd
+      run: pwd ls
