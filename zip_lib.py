@@ -10,6 +10,7 @@ def zipdir(path, ziph):
 
 if __name__ == '__main__':
     # 指定要压缩的文件夹路径和zip文件名
+    print("zip venv folder")
     current_date = datetime.date.today().strftime('%Y-%m-%d')
     zipf = zipfile.ZipFile(f'venv-{current_date}.zip', 'w', zipfile.ZIP_DEFLATED)
     zipdir('./venv', zipf)
